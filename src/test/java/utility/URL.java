@@ -10,6 +10,7 @@ public class URL {
     // Base URL
     public static final String URL = "https://jnswdazms1.execute-api.us-east-1.amazonaws.com/dev";
 
+
     public static String getEndPoint(){
         log.info("Base URI : " + URL);
         return URL;

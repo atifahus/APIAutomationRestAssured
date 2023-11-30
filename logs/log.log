@@ -1,0 +1,6 @@
+2023-11-29 23:41:25 INFO  URL:20 - URI End Point : https://jnswdazms1.execute-api.us-east-1.amazonaws.com/dev/cognito-create-user
+2023-11-29 23:41:25 INFO  Base:116 - Inside PayloadConverter function
+2023-11-29 23:41:25 INFO  Base:136 - Inside POSTRequest call
+2023-11-29 23:41:26 INFO  TestUtils:38 - Getting Response Code
+2023-11-29 23:41:26 INFO  TestUtils:40 - Status Code: 200
+2023-11-29 23:41:26 INFO  TestUtils:25 - Status Code is returned as expected.

@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ebbc12b-623a-4881-be17-19f3cad9bb0e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseAssertion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseAssertion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/atifa/TollManagementAPI/CreateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/atifa/TollManagementAPI/CreateUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utility/URL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/URL.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,13 +49,13 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="AccessToken" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="base.AccessToken" />
+  <component name="RunManager" selected="TestNG.CreateUserTest.newUsertest">
+    <configuration name="ResetPassword" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atifa.TollManagementAPI.ResetPassword" />
       <module name="ApiAutomationFramewok" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="base.*" />
+          <option name="PATTERN" value="com.atifa.TollManagementAPI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -73,9 +76,85 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CreateUserTest.negnewusertest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ApiAutomationFramewok" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atifa.TollManagementAPITests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.atifa.TollManagementAPITests" />
+      <option name="MAIN_CLASS_NAME" value="com.atifa.TollManagementAPITests.CreateUserTest" />
+      <option name="METHOD_NAME" value="negnewusertest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateUserTest.newUsertest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ApiAutomationFramewok" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atifa.TollManagementAPITests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.atifa.TollManagementAPITests" />
+      <option name="MAIN_CLASS_NAME" value="com.atifa.TollManagementAPITests.CreateUserTest" />
+      <option name="METHOD_NAME" value="newUsertest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogInTest.successfulLogIn" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ApiAutomationFramewok" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atifa.TollManagementAPITests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.atifa.TollManagementAPITests" />
+      <option name="MAIN_CLASS_NAME" value="com.atifa.TollManagementAPITests.LogInTest" />
+      <option name="METHOD_NAME" value="successfulLogIn" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResetPasswordTest.validateReset" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ApiAutomationFramewok" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atifa.TollManagementAPITests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.atifa.TollManagementAPITests" />
+      <option name="MAIN_CLASS_NAME" value="com.atifa.TollManagementAPITests.ResetPasswordTest" />
+      <option name="METHOD_NAME" value="validateReset" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AccessToken" />
+        <item itemvalue="TestNG.CreateUserTest.newUsertest" />
+        <item itemvalue="TestNG.CreateUserTest.negnewusertest" />
+        <item itemvalue="TestNG.LogInTest.successfulLogIn" />
+        <item itemvalue="TestNG.ResetPasswordTest.validateReset" />
+        <item itemvalue="Application.ResetPassword" />
       </list>
     </recent_temporary>
   </component>

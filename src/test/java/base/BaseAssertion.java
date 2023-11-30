@@ -63,4 +63,6 @@ public class BaseAssertion {
         log.info("Header "+ headerKey + " = " + headerValue +" available");
     }
 
+
+
 }
