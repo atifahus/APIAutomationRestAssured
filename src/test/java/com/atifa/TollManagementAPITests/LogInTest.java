@@ -8,17 +8,18 @@ import org.testng.annotations.Test;
 public class LogInTest {
     @Test
     public void successfulLogIn(){
-        Response rs= LogIn.logIn();
-
-        BaseAssertion.verifyStatusCode(rs,200);
+      Response rs=  LogIn.login();
+      BaseAssertion.verifyStatusCode(rs,200);
+      BaseAssertion.verifySpecificMessage(rs,"message","Log in successfully!");
 
     }
     @Test
     public void unsuccessfulLogIn(){
-        Response rs=LogIn.logIn();
-
-        BaseAssertion.verifyStatusCode(rs,400);
-
+        Response resp=  LogIn.negLogin();
+        BaseAssertion.verifySpecificMessage(resp, "statusCode", "400");
+        BaseAssertion.verifySpecificMessage(resp,"message","Incorrect username or password.");
 
     }
+
+
 }
