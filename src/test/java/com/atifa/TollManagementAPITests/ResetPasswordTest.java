@@ -18,6 +18,7 @@ public class ResetPasswordTest {
     public void unsuccessfulReset(){
         Response rs= ResetPassword.reset();
         BaseAssertion.verifyStatusCode(rs,400);
+        // BaseAssertion.verifySpecificMessage(rs,"message","Password set successfully!");
 
     }
 }
