@@ -14,7 +14,8 @@ public class ResetPasswordTest {
 
     /*
     * Positive test-Validate successful password reset
-    * Negative test-Validate it is failed when authentication is missing
+    * Negative test1-Validate it is failed when authentication is missing
+    * Negative test2- with invalid user and password credentials
     *
     * */
 
@@ -46,7 +47,13 @@ public class ResetPasswordTest {
         BaseAssertion.verifySpecificMessage(rs,"message","Unauthorized");
 
 
+    }
 
+    @Test
+    public void resetWithInvalidCredentialTest(){
 
+        Response rs=ResetPassword.resetPasswordInvalidCredentials();
+        BaseAssertion.verifySpecificMessage(rs,"statusCode","400");
+        BaseAssertion.verifySpecificMessage(rs,"message","User does not exist.");
     }
 }

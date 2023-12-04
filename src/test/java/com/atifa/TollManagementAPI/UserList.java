@@ -2,6 +2,7 @@ package com.atifa.TollManagementAPI;
 
 import base.AccessToken;
 import base.Base;
+import base.PayloadProcessor;
 import io.restassured.response.Response;
 import utility.URL;
 
@@ -24,6 +25,16 @@ public class UserList {
 
         return response;
 
+    }
+    public static Response getUserListWithInvalidURL(){
+
+        String bearerToken="Bearer "+AccessToken.getToken();
+
+        String url= URL.URL;
+
+        Response response= Base.GETRequest(url,bearerToken);
+
+        return response;
     }
 
 

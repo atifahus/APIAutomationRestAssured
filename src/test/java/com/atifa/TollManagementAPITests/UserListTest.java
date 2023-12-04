@@ -9,7 +9,8 @@ public class UserListTest {
 
     /*
     * positive test-validate to get user list successfully
-    * negative test-validate 401 unauthorized response recieve if no auth is given
+    * negative test1-validate 401 unauthorized response received if no auth is given
+    * negative test2-validate 403 status code received if invalid url is given
     *
     * */
     @Test
@@ -25,6 +26,13 @@ public class UserListTest {
         Response rs=UserList.getUserListNegTestWithoutAuth();
 
         BaseAssertion.verifyStatusCode(rs,401);
+
+    }
+    @Test
+    public void userListInvalidURLTest(){
+        Response rs=UserList.getUserListWithInvalidURL();
+
+        BaseAssertion.verifyStatusCode(rs,403);
 
     }
 
