@@ -7,9 +7,24 @@
     <list default="true" id="4ebbc12b-623a-4881-be17-19f3cad9bb0e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payloads/createUser.json" beforeDir="false" afterPath="$PROJECT_DIR$/payloads/createUser.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payloads/negSubmitToll.json" beforeDir="false" afterPath="$PROJECT_DIR$/payloads/negSubmitToll.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/AccessToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/AccessToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/atifa/TollManagementAPI/CreateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/atifa/TollManagementAPI/CreateUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/atifa/TollManagementAPI/LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/atifa/TollManagementAPI/LogIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/atifa/TollManagementAPI/ResetPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/atifa/TollManagementAPI/ResetPassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/atifa/TollManagementAPI/TollCollectionList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/atifa/TollManagementAPI/TollCollectionList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/atifa/TollManagementAPI/TollListBasedOnCollectionPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/atifa/TollManagementAPI/TollListBasedOnCollectionPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/atifa/TollManagementAPI/UserList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/atifa/TollManagementAPI/UserList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/atifa/TollManagementAPITests/CreateUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/atifa/TollManagementAPITests/CreateUserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/atifa/TollManagementAPITests/LogInTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/atifa/TollManagementAPITests/LogInTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/atifa/TollManagementAPITests/ResetPasswordTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/atifa/TollManagementAPITests/ResetPasswordTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/atifa/TollManagementAPITests/SubmitTollTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/atifa/TollManagementAPITests/SubmitTollTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/atifa/TollManagementAPITests/TollCollectionListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/atifa/TollManagementAPITests/TollCollectionListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/atifa/TollManagementAPITests/TollListBasedOnCollectionPointTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/atifa/TollManagementAPITests/TollListBasedOnCollectionPointTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/atifa/TollManagementAPITests/UserListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/atifa/TollManagementAPITests/UserListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +41,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2YpqXkvPHaCBSthz5Uh7FqCeOCy" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -40,7 +55,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main"
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/atifahussain/Desktop/QA_folder/ApiAutomation"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -48,21 +64,8 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LogInTest.unsuccessfulLogIn">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="ApiAutomationFramewok" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="ApiAutomationFramewok" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreateUserTest.negnewusertest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.LogInTest.unsuccessfulLogInWithInvalidUser">
+    <configuration name="CreateUserTest.createUserWithEmptyBodyTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ApiAutomationFramewok" />
       <extension name="coverage">
         <pattern>
@@ -72,7 +75,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.atifa.TollManagementAPITests" />
       <option name="MAIN_CLASS_NAME" value="com.atifa.TollManagementAPITests.CreateUserTest" />
-      <option name="METHOD_NAME" value="negnewusertest" />
+      <option name="METHOD_NAME" value="createUserWithEmptyBodyTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -80,7 +83,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateUserTest.newUsertest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CreateUserTest.createUserWithExistingInfo" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ApiAutomationFramewok" />
       <extension name="coverage">
         <pattern>
@@ -90,7 +93,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.atifa.TollManagementAPITests" />
       <option name="MAIN_CLASS_NAME" value="com.atifa.TollManagementAPITests.CreateUserTest" />
-      <option name="METHOD_NAME" value="newUsertest" />
+      <option name="METHOD_NAME" value="createUserWithExistingInfo" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -98,7 +101,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogInTest.successfulLogIn" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LogInTest.unsuccessfulLogInWithInvalidPassword" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ApiAutomationFramewok" />
       <extension name="coverage">
         <pattern>
@@ -108,7 +111,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.atifa.TollManagementAPITests" />
       <option name="MAIN_CLASS_NAME" value="com.atifa.TollManagementAPITests.LogInTest" />
-      <option name="METHOD_NAME" value="successfulLogIn" />
+      <option name="METHOD_NAME" value="unsuccessfulLogInWithInvalidPassword" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -116,7 +119,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogInTest.unsuccessfulLogIn" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LogInTest.unsuccessfulLogInWithInvalidUser" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ApiAutomationFramewok" />
       <extension name="coverage">
         <pattern>
@@ -126,7 +129,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.atifa.TollManagementAPITests" />
       <option name="MAIN_CLASS_NAME" value="com.atifa.TollManagementAPITests.LogInTest" />
-      <option name="METHOD_NAME" value="unsuccessfulLogIn" />
+      <option name="METHOD_NAME" value="unsuccessfulLogInWithInvalidUser" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -134,7 +137,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TollListBasedOnCollectionPointTest.invalidCollectionPointTollList" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LogInTest.unsuccessfulLogInWithWrongUser" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ApiAutomationFramewok" />
       <extension name="coverage">
         <pattern>
@@ -143,8 +146,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.atifa.TollManagementAPITests" />
-      <option name="MAIN_CLASS_NAME" value="com.atifa.TollManagementAPITests.TollListBasedOnCollectionPointTest" />
-      <option name="METHOD_NAME" value="invalidCollectionPointTollList" />
+      <option name="MAIN_CLASS_NAME" value="com.atifa.TollManagementAPITests.LogInTest" />
+      <option name="METHOD_NAME" value="unsuccessfulLogInWithWrongUser" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -154,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LogInTest.unsuccessfulLogIn" />
-        <item itemvalue="TestNG.TollListBasedOnCollectionPointTest.invalidCollectionPointTollList" />
-        <item itemvalue="TestNG.LogInTest.successfulLogIn" />
-        <item itemvalue="TestNG.CreateUserTest.newUsertest" />
-        <item itemvalue="TestNG.CreateUserTest.negnewusertest" />
+        <item itemvalue="TestNG.LogInTest.unsuccessfulLogInWithInvalidUser" />
+        <item itemvalue="TestNG.LogInTest.unsuccessfulLogInWithInvalidPassword" />
+        <item itemvalue="TestNG.LogInTest.unsuccessfulLogInWithWrongUser" />
+        <item itemvalue="TestNG.CreateUserTest.createUserWithExistingInfo" />
+        <item itemvalue="TestNG.CreateUserTest.createUserWithEmptyBodyTest" />
       </list>
     </recent_temporary>
   </component>

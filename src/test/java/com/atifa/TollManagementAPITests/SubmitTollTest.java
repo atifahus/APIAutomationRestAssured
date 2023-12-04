@@ -6,6 +6,11 @@ import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
 public class SubmitTollTest {
+    /*
+    * Positive test-validate Toll is submitted successfully
+    * Negative test-Validate unsuccessful to submit toll when id info is missing in body
+    *
+    * */
     @Test
     public void validateSubmitToll(){
         Response rs=SubmitToll.getSubmitToll();
@@ -18,11 +23,13 @@ public class SubmitTollTest {
 
     @Test
     public void validateSubmitTollWithNegativeData(){
-        //With invalid data, expected result is 400 status code
+        //With missing ID data, expected result is 400 status code
 
-        Response rs=SubmitToll.getSubmitToll();
+        Response rs=SubmitToll.getInvalidSubmitToll();
 
-        BaseAssertion.verifyStatusCode(rs,400);
+        BaseAssertion.verifySpecificMessage(rs,"statusCode","400");
+        BaseAssertion.verifySpecificMessage(rs,"message","error occured!");
+
 
 
 

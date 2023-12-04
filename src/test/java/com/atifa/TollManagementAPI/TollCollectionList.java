@@ -18,6 +18,16 @@ public class TollCollectionList {
         return response;
 
     }
+    public static Response getTollCollectionListWithoutEndpoint(){
+        String token=AccessToken.getToken();
+        String bearerToken="Bearer "+token;
+
+        String url=URL.URL;
+        Response response=Base.GETRequest(url,bearerToken);
+
+        return response;
+
+    }
 
 
 }

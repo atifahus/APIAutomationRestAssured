@@ -16,6 +16,15 @@ public class UserList {
         return response;
 
     }
+    public static Response getUserListNegTestWithoutAuth(){
+
+        String url= URL.getEndPoint("/cognito-user-list");
+
+        Response response= Base.GETRequest(url);
+
+        return response;
+
+    }
 
 
 }

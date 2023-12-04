@@ -101,7 +101,7 @@
                     <version>2.22.2</version>
                     <configuration>
                         <suiteXmlFiles>
-                            <suiteXmlFile>target/test-classes/REST_API_Test_Runner.xml</suiteXmlFile>
+                            <suiteXmlFile>Resources/API_Automation_Runner.xml</suiteXmlFile>
                         </suiteXmlFiles>
                         <includes>
                             <include>**/runner.AllApiTest.class</include>

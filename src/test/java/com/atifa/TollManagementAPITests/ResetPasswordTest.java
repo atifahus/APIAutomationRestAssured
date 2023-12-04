@@ -6,18 +6,23 @@ import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
 public class ResetPasswordTest {
+
+    /*
+    * Positive test-Validate successful password reset
+    * Negative test-Validate it is failed when authentication is missing
+    *
+    * */
     @Test
-    public void validateReset(){
-        Response rs= ResetPassword.reset();
-        BaseAssertion.verifyStatusCode(rs,200);
-       // BaseAssertion.verifySpecificMessage(rs,"message","Password set successfully!");
+    public void successRestTest(){
+        Response rs=ResetPassword.resetPassword();
+        BaseAssertion.verifySpecificMessage(rs,"statusCode","200");
 
     }
 
     @Test
     public void unsuccessfulReset(){
-        Response rs= ResetPassword.reset();
-        BaseAssertion.verifyStatusCode(rs,400);
+        Response rs= ResetPassword.resetPasswordNegTest();
+        BaseAssertion.verifyStatusCode(rs,401);
 
     }
 }

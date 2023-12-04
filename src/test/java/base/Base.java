@@ -140,6 +140,14 @@ public class Base {
         log.debug(requestSpecification.log().all());
         return response;
     }
+    public static Response POSTRequest(String uRI, String bearerToken,String queryKey,String queryValue) {
+        log.info("Inside POSTRequest call");
+        RequestSpecification requestSpecification = RestAssured.given().header("Authorization", bearerToken).queryParam(queryKey,queryValue);
+        requestSpecification.contentType(ContentType.JSON);
+        Response response = requestSpecification.post(uRI);
+        log.debug(requestSpecification.log().all());
+        return response;
+    }
 
     /**
      * Methods to make http call

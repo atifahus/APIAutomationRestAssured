@@ -1,9 +1,11 @@
-2023-11-30 18:20:57 INFO  URL:20 - URI End Point : https://jnswdazms1.execute-api.us-east-1.amazonaws.com/dev/cognito-login
-2023-11-30 18:20:57 INFO  Base:116 - Inside PayloadConverter function
-2023-11-30 18:20:57 INFO  Base:136 - Inside POSTRequest call
-2023-11-30 18:20:58 INFO  TestUtils:64 - Getting Response Message
-2023-11-30 18:20:58 INFO  TestUtils:66 - Response Message for statusCode: 400
-2023-11-30 18:20:58 INFO  TestUtils:34 - Both texts are same
-2023-11-30 18:20:58 INFO  TestUtils:64 - Getting Response Message
-2023-11-30 18:20:58 INFO  TestUtils:66 - Response Message for message: Incorrect username or password.
-2023-11-30 18:20:58 INFO  TestUtils:34 - Both texts are same
+2023-12-04 05:29:34 INFO  TestUtils:27 - Env Name: stage
+2023-12-04 05:29:35 INFO  TestUtils:27 - Env Name: stage
+2023-12-04 05:29:35 INFO  TestUtils:27 - Env Name: stage
+2023-12-04 05:29:38 INFO  URL:20 - URI End Point : https://jnswdazms1.execute-api.us-east-1.amazonaws.com/dev/cognito-login
+2023-12-04 05:29:38 INFO  Base:136 - Inside POSTRequest call
+2023-12-04 05:29:38 INFO  TestUtils:64 - Getting Response Message
+2023-12-04 05:29:38 INFO  TestUtils:66 - Response Message for statusCode: 400
+2023-12-04 05:29:38 INFO  TestUtils:34 - Both texts are same
+2023-12-04 05:29:38 INFO  TestUtils:64 - Getting Response Message
+2023-12-04 05:29:38 INFO  TestUtils:66 - Response Message for message: Incorrect username or password.
+2023-12-04 05:29:38 INFO  TestUtils:34 - Both texts are same

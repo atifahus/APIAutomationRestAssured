@@ -21,15 +21,15 @@ public class TollListBasedOnCollectionPoint {
 
 
     }
-    public static Response tollListWithInvalidCollectionPoint(){
-        String bearerToken="Bearer "+AccessToken.getToken();
+    public static Response tollListWithInvalidMethod(){
+       String bearerToken="Bearer "+AccessToken.getToken();
 
-        String url= URL.getEndPoint("/toll-collection-list");
+        String url= URL.getEndPoint("/toll-collection-listTest");
 
         String queryKey="collectionPointId";
-        String queryValue="][[[[";
+        String queryValue="NY088734";
 
-        Response response= Base.GETRequest(url,bearerToken,queryKey,queryValue);
+        Response response= Base.POSTRequest(url,bearerToken,queryKey,queryValue);
 
         return response;
 

@@ -1,25 +1,35 @@
 package com.atifa.TollManagementAPI;
 
-
 import base.AccessToken;
 import base.Base;
+import groovy.json.JsonException;
 import io.restassured.response.Response;
 import utility.URL;
 
 public class ResetPassword {
+    public static Response resetPassword(){
 
-    public static Response reset() {
-        String bearerToken = "Bearer " + AccessToken.getToken();
+        String bearerToken= "Bearer "+ AccessToken.getToken();
 
-        String url = "https://jnswdazms1.execute-api.us-east-1.amazonaws.com/dev/cognito-admin-set-user-password";
+       String url= URL.getEndPoint("/cognito-admin-set-user-password");
+        String jsonBody=Base.generatePayLoadString("reset.json");
 
-        String bodyOfReset = "reset.json";
+         Response   response= Base.POSTRequest(url,jsonBody,bearerToken);
 
-        Response response = Base.POSTRequest(url, bodyOfReset, bearerToken);
         return response;
-
     }
 
 
+    public static Response resetPasswordNegTest(){
+
+
+
+        String url= URL.getEndPoint("/cognito-admin-set-user-password");
+        String jsonBody=Base.generatePayLoadString("resetNegTest.json");
+
+        Response   response= Base.POSTRequest(url,jsonBody);
+
+        return response;
+    }
     }
 

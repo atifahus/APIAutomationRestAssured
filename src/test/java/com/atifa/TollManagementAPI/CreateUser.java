@@ -2,8 +2,13 @@ package com.atifa.TollManagementAPI;
 
 import base.AccessToken;
 import base.Base;
+import base.PayloadProcessor;
+import com.google.gson.Gson;
 import io.restassured.response.Response;
 import utility.URL;
+
+import java.util.Map;
+import java.util.Properties;
 
 public class CreateUser {
 
@@ -13,10 +18,19 @@ public class CreateUser {
         String bearerToken="Bearer "+token;
 
         String url= URL.getEndPoint("/cognito-create-user");
-        String jsonBody=Base.generatePayLoadString("createUser.json");
+
+        Properties properties=new Properties();
+
+        Map<String,Object> payloadInMap= PayloadProcessor.getProcessedPayloadInJson("createUser.json",properties);
+
+        payloadInMap.put("username","UniqueAtifa");
+        payloadInMap.put("email","UniqueAtifa123@gmail.com");
+
+        String payloadInString=PayloadProcessor.payloadFromMapToString(payloadInMap);
 
 
-       Response response= Base.POSTRequest(url,jsonBody,bearerToken);
+
+       Response response= Base.POSTRequest(url,payloadInString,bearerToken);
 
         return response;
     }
@@ -26,13 +40,40 @@ public class CreateUser {
         String bearerToken="Bearer "+token;
 
         String url= URL.getEndPoint("/cognito-create-user");
-        String jsonBody=Base.generatePayLoadString("createUser.json");
+        Properties properties=new Properties();
 
-        Response response= Base.POSTRequest(url,jsonBody,bearerToken);
+        Map<String,Object> payloadInMap= PayloadProcessor.getProcessedPayloadInJson("createUser.json",properties);
+
+        payloadInMap.put("username","UniqueAtifa");
+        payloadInMap.put("email","UniqueAtifa123@gmail.com");
+
+        String payloadInString=PayloadProcessor.payloadFromMapToString(payloadInMap);
+
+        Response response= Base.POSTRequest(url,payloadInString,bearerToken);
 
         return response;
 
     }
+    public Response createUserWithEmptyBody(){
+        String token=AccessToken.getToken();
+        String bearerToken="Bearer "+token;
+
+        String url= URL.getEndPoint("/cognito-create-user");
+        Properties properties=new Properties();
+
+        Map<String,Object> payloadInMap= PayloadProcessor.getProcessedPayloadInJson("createUser.json",properties);
+
+        payloadInMap.put("username","");
+        payloadInMap.put("email","");
+        payloadInMap.put("password", "");
+
+        String payloadInString=PayloadProcessor.payloadFromMapToString(payloadInMap);
+        Response response= Base.POSTRequest(url,payloadInString,bearerToken);
+
+        return response;
+
+    }
+
 
 
 }
