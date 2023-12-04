@@ -25,7 +25,7 @@ public class ResetPasswordTest {
     @BeforeMethod
     public void beforeTests(){
         extent = ReportManager.getInstance();
-        testLog = extent.createTest("Validate User Log In test");
+        testLog = extent.createTest("Validate Password Reset Test");
     }
     @AfterClass
     public void aftertests(){

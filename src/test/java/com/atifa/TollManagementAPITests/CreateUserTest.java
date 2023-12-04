@@ -23,13 +23,13 @@ public class CreateUserTest {
     @BeforeMethod
     public void beforeTests(){
         extent = ReportManager.getInstance();
-        testLog = extent.createTest("Validate User Log In test");
+        testLog = extent.createTest("Validate User Created Successfully");
     }
     @AfterClass
     public void aftertests(){
         extent.flush();
     }
-    @Test
+    @Test(priority = 1)
     public void newUsertest(){
         CreateUser newUser=new CreateUser();
         Response rs=newUser.createNewUser();
@@ -39,7 +39,7 @@ public class CreateUserTest {
 
     }
 
-    @Test
+    @Test (priority = 2)
     public void createUserWithExistingInfo(){
         CreateUser user=new CreateUser();
         Response rs=user.createUserWithExistBody();

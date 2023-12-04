@@ -36,6 +36,21 @@ public class TollListBasedOnCollectionPoint {
 
     }
 
+    public static Response tollListWithInvalidToken(){
+        String bearerToken=AccessToken.getToken();
+
+        String url= URL.getEndPoint("/toll-collection-listTest");
+
+        String queryKey="collectionPointId";
+        String queryValue="NY088734";
+
+        Response response= Base.POSTRequest(url,bearerToken,queryKey,queryValue);
+
+        return response;
+
+
+    }
+
 
 
 

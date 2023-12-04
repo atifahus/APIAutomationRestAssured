@@ -4,6 +4,7 @@ import base.AccessToken;
 import base.Base;
 import base.PayloadProcessor;
 import io.restassured.response.Response;
+import utility.GetCurrentDate;
 import utility.URL;
 
 import java.util.Map;
@@ -25,7 +26,8 @@ public class LogIn {
 
         Properties properties=new Properties();
         Map<String,Object> payloadInMap= PayloadProcessor.getProcessedPayloadInJson("login.json",properties);
-        payloadInMap.put("username","Staff");
+        String user="Manager"+GetCurrentDate.getCurrentDate();
+        payloadInMap.put("username",user);
 
         String payloadInString=PayloadProcessor.payloadFromMapToString(payloadInMap);
 
@@ -40,7 +42,8 @@ public class LogIn {
 
         Properties properties=new Properties();
         Map<String,Object> payloadInMap= PayloadProcessor.getProcessedPayloadInJson("login.json",properties);
-        payloadInMap.put("password","Manager@");
+        String password="Manager@"+ GetCurrentDate.getCurrentTimeStamp();
+        payloadInMap.put("password",password);
 
         String payloadInString=PayloadProcessor.payloadFromMapToString(payloadInMap);
 

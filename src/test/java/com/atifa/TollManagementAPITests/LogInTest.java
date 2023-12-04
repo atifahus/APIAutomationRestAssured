@@ -24,7 +24,7 @@ public class LogInTest {
     @BeforeMethod
     public void beforeTests(){
         extent = ReportManager.getInstance();
-        testLog = extent.createTest("Validate User Log In test");
+        testLog = extent.createTest("Validate User Log In Successfully");
     }
     @AfterClass
     public void aftertests(){

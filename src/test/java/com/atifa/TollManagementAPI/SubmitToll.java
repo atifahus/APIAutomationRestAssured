@@ -40,5 +40,18 @@ public class SubmitToll {
         return response;
 
     }
+    public static Response submitTollInvalidMethod(){
+        String token= AccessToken.getToken();
+        String bearerToken="Bearer "+token;
+
+        String url= URL.getEndPoint("/tollcollection");
+
+        Response response= Base.GETRequest(url,bearerToken);
+
+        return response;
+
+    }
+
+
 
 }

@@ -5,12 +5,15 @@ import base.Base;
 import base.PayloadProcessor;
 import com.google.gson.Gson;
 import io.restassured.response.Response;
+import utility.GetCurrentDate;
 import utility.URL;
 
 import java.util.Map;
 import java.util.Properties;
 
 public class CreateUser {
+    static String userId="Random"+ GetCurrentDate.getCurrentTimeStamp();
+    static String emailAdd="Random"+GetCurrentDate.getCurrentTimeStamp()+"@gmail.com";
 
     public Response createNewUser(){
 
@@ -23,8 +26,9 @@ public class CreateUser {
 
         Map<String,Object> payloadInMap= PayloadProcessor.getProcessedPayloadInJson("createUser.json",properties);
 
-        payloadInMap.put("username","UniqueAtifa");
-        payloadInMap.put("email","UniqueAtifa123@gmail.com");
+
+        payloadInMap.put("username",userId);
+        payloadInMap.put("email",emailAdd);
 
         String payloadInString=PayloadProcessor.payloadFromMapToString(payloadInMap);
 
@@ -44,8 +48,8 @@ public class CreateUser {
 
         Map<String,Object> payloadInMap= PayloadProcessor.getProcessedPayloadInJson("createUser.json",properties);
 
-        payloadInMap.put("username","UniqueAtifa");
-        payloadInMap.put("email","UniqueAtifa123@gmail.com");
+        payloadInMap.put("username",userId);
+        payloadInMap.put("email",emailAdd);
 
         String payloadInString=PayloadProcessor.payloadFromMapToString(payloadInMap);
 

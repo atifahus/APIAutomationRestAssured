@@ -30,6 +30,20 @@ public  class GetCurrentDate {
         return formattedDateTime;
     }
 
+    public  static String getCurrentTimeStamp(){
+        // Get current date
+        Date currentDate = new Date();
+
+        Date currentDateTime = new Date();
+
+        // Format date and time as a string with timestamp
+        SimpleDateFormat dateFormat = new SimpleDateFormat("HHmmssSSS");
+        String formattedDateTime = dateFormat.format(currentDateTime);
+        System.out.println("Current Date: " + formattedDateTime);
+        return formattedDateTime;
+    }
+
+
  /*   public static void main(String[] args) {
 
         GetCurrentDate data = new GetCurrentDate();
