@@ -22,10 +22,10 @@ public class SubmitTollTest {
     }
 
     @Test
-    public void validateSubmitTollWithNegativeData(){
+    public void submitTollTestWithoutData(){
         //With missing ID data, expected result is 400 status code
 
-        Response rs=SubmitToll.getInvalidSubmitToll();
+        Response rs=SubmitToll.submitTollWithoutID();
 
         BaseAssertion.verifySpecificMessage(rs,"statusCode","400");
         BaseAssertion.verifySpecificMessage(rs,"message","error occured!");

@@ -11,6 +11,7 @@
                     <exclude name="validateUserCreation"></exclude>
                 </methods>
             </class>
+            <class name="com.atifa.TollManagementAPITests.LogInTest"></class>
             <!--<class name="tollappapitest.TollAppLogInRequestTest"/>
             <class name="tollappapitest.TollAppCreateUserRequestTest"/>
             <class name="tollappapitest.TollUserListRequestTest"/>-->

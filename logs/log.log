@@ -1,11 +1,7 @@
-2023-12-04 05:29:34 INFO  TestUtils:27 - Env Name: stage
-2023-12-04 05:29:35 INFO  TestUtils:27 - Env Name: stage
-2023-12-04 05:29:35 INFO  TestUtils:27 - Env Name: stage
-2023-12-04 05:29:38 INFO  URL:20 - URI End Point : https://jnswdazms1.execute-api.us-east-1.amazonaws.com/dev/cognito-login
-2023-12-04 05:29:38 INFO  Base:136 - Inside POSTRequest call
-2023-12-04 05:29:38 INFO  TestUtils:64 - Getting Response Message
-2023-12-04 05:29:38 INFO  TestUtils:66 - Response Message for statusCode: 400
-2023-12-04 05:29:38 INFO  TestUtils:34 - Both texts are same
-2023-12-04 05:29:38 INFO  TestUtils:64 - Getting Response Message
-2023-12-04 05:29:38 INFO  TestUtils:66 - Response Message for message: Incorrect username or password.
-2023-12-04 05:29:38 INFO  TestUtils:34 - Both texts are same
+2023-12-04 06:21:55 INFO  TestUtils:27 - Env Name: stage
+2023-12-04 06:21:56 INFO  TestUtils:27 - Env Name: stage
+2023-12-04 06:21:56 INFO  TestUtils:27 - Env Name: stage
+2023-12-04 06:21:58 INFO  Base:178 - Inside GETRequest call
+2023-12-04 06:21:58 INFO  TestUtils:38 - Getting Response Code
+2023-12-04 06:21:58 INFO  TestUtils:40 - Status Code: 403
+2023-12-04 06:21:58 INFO  TestUtils:25 - Status Code is returned as expected.

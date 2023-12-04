@@ -10,6 +10,7 @@ public class TollListBasedOnCollectionPointTest {
     /*
     * Positive test-validate user get toll list based on collection point ID successfully
     * Negative test-validate user is unsuccessful to get toll list if used wrong method.
+    *               trying POST method instead of GET
     *
     * */
     @Test
@@ -17,12 +18,13 @@ public class TollListBasedOnCollectionPointTest {
         Response rs= TollListBasedOnCollectionPoint.tollList();
 
         BaseAssertion.verifyStatusCode(rs,200);
+        BaseAssertion.verifySpecificMessage(rs,"message","success");
 
     }
 
     @Test
     public void invalidCollectionPointTollList(){
-        //With invalid collection point ID, expected result is 400 status code
+
 
         Response rs= TollListBasedOnCollectionPoint.tollListWithInvalidMethod();
 

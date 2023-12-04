@@ -11,6 +11,12 @@ import org.testng.annotations.Test;
 import utility.ReportManager;
 
 public class CreateUserTest {
+    /*
+    * positive test= validate user is created successfully
+    * negative test1= with existing user body
+    * negative test2= when json body is empty
+    *
+    * */
     private static ExtentReports extent;
     private static ExtentTest testLog;
 

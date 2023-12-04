@@ -14,7 +14,8 @@ public class LogInTest {
 
     /*
     * Positive test=validate user can log in successfully
-    * negative test=validate user unsuccessful when log in with invalid username
+    * negative test1=validate user unsuccessful when log in with invalid username
+    * negative test2=validate user unsuccessful when log in with invalid password
     *
     * */
     private static ExtentReports extent;

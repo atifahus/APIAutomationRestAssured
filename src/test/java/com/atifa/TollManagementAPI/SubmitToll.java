@@ -2,8 +2,12 @@ package com.atifa.TollManagementAPI;
 
 import base.AccessToken;
 import base.Base;
+import base.PayloadProcessor;
 import io.restassured.response.Response;
 import utility.URL;
+
+import java.util.Map;
+import java.util.Properties;
 
 public class SubmitToll {
 
@@ -20,15 +24,18 @@ public class SubmitToll {
         return response;
 
     }
-    public static Response getInvalidSubmitToll(){
+    public static Response submitTollWithoutID(){
         String token= AccessToken.getToken();
         String bearerToken="Bearer "+token;
 
         String url= URL.getEndPoint("/tollcollection");
 
-        String jsonBody=Base.generatePayLoadString("negSubmitToll.json");
+        Properties properties=new Properties();
+        Map<String ,Object> payloadInMap= PayloadProcessor.getProcessedPayloadInJson("submitToll.json",properties);
+        payloadInMap.put("id","");
+        String payloadInString=PayloadProcessor.payloadFromMapToString(payloadInMap);
 
-        Response response= Base.POSTRequest(url,jsonBody,bearerToken);
+        Response response= Base.POSTRequest(url,payloadInString,bearerToken);
 
         return response;
 

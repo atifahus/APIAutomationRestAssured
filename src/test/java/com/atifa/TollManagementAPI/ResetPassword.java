@@ -11,7 +11,7 @@ public class ResetPassword {
 
         String bearerToken= "Bearer "+ AccessToken.getToken();
 
-       String url= URL.getEndPoint("/cognito-admin-set-user-password");
+        String url= URL.getEndPoint("/cognito-admin-set-user-password");
         String jsonBody=Base.generatePayLoadString("reset.json");
 
          Response   response= Base.POSTRequest(url,jsonBody,bearerToken);
@@ -20,12 +20,10 @@ public class ResetPassword {
     }
 
 
-    public static Response resetPasswordNegTest(){
-
-
+    public static Response resetPasswordNoAuth(){
 
         String url= URL.getEndPoint("/cognito-admin-set-user-password");
-        String jsonBody=Base.generatePayLoadString("resetNegTest.json");
+        String jsonBody=Base.generatePayLoadString("reset.json");
 
         Response   response= Base.POSTRequest(url,jsonBody);
 
