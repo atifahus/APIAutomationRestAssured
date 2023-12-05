@@ -29,7 +29,7 @@ public class CreateUserTest {
     public void aftertests(){
         extent.flush();
     }
-    @Test(priority = 1)
+    @Test(priority = 1,groups = "acceptenceTests")
     public void newUsertest(){
         CreateUser newUser=new CreateUser();
         Response rs=newUser.createNewUser();
