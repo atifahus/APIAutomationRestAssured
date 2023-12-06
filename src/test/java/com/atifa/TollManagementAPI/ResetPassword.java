@@ -44,7 +44,7 @@ public class ResetPassword {
         Properties properties=new Properties();
         Map<String , Object> payloadInMap= PayloadProcessor.getProcessedPayloadInJson("reset.json",properties);
         payloadInMap.put("username","Staff");
-        payloadInMap.put("password","1212");
+        /*payloadInMap.put("password","1212");*/
         String payloadInString=PayloadProcessor.payloadFromMapToString(payloadInMap);
 
         Response response=Base.POSTRequest(url,payloadInString,bearerToken);

@@ -7,11 +7,16 @@
             <!--            <class name="apitest.PeopleResourcesTest"/>-->
             <!--            <class name="apitest.SubmitResourceTest"/>-->
             <class name="com.atifa.TollManagementAPITests.CreateUserTest">
-                <methods>
+                <!--<methods>
                     <exclude name="validateUserCreation"></exclude>
-                </methods>
+                </methods>-->
             </class>
-           <!-- <class name="com.atifa.TollManagementAPITests.LogInTest"></class>-->
+            <class name="com.atifa.TollManagementAPITests.TollListBasedOnCollectionPointTest"></class>
+            <class name="com.atifa.TollManagementAPITests.LogInTest"></class>
+            <class name="com.atifa.TollManagementAPITests.UserListTest"></class>
+            <class name="com.atifa.TollManagementAPITests.SubmitTollTest"></class>
+            <class name="com.atifa.TollManagementAPITests.ResetPasswordTest"></class>
+            <class name="com.atifa.TollManagementAPITests.TollCollectionListTest"></class>
             <!--<class name="tollappapitest.TollAppLogInRequestTest"/>
             <class name="tollappapitest.TollAppCreateUserRequestTest"/>
             <class name="tollappapitest.TollUserListRequestTest"/>-->
