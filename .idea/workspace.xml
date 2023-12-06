@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ebbc12b-623a-4881-be17-19f3cad9bb0e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Reports/Report-2023-12-06 14 19 35 016.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/Report-2023-12-06 14 20 15 183.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reports/Report-2023-12-06 14 21 51 993.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Resources/API_Automation_Runner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resources/API_Automation_Runner.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,10 +44,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/atifahussain/Desktop/QA_folder/ApiAutomation",
-    "project.structure.last.edited": "Modules",
+    "last_opened_file_path": "/Users/atifahussain/Desktop/APIAutomationRestAssured",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settings.project.maven.runner"
   }
 }]]></component>
@@ -51,7 +56,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StringRandomizer">
+  <component name="RunManager" selected="TestNG./Users/atifahussain/Desktop/APIAutomationRestAssured/src/Resources/API_Automation_Runner.xml">
     <configuration name="StringRandomizer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="utility.StringRandomizer" />
       <module name="ApiAutomationFramewok" />
@@ -100,24 +105,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateUserTest.newUsertest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ApiAutomationFramewok" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atifa.TollManagementAPITests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.atifa.TollManagementAPITests" />
-      <option name="MAIN_CLASS_NAME" value="com.atifa.TollManagementAPITests.CreateUserTest" />
-      <option name="METHOD_NAME" value="newUsertest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LogInTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ApiAutomationFramewok" />
       <extension name="coverage">
@@ -135,13 +122,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="/Users/atifahussain/Desktop/APIAutomationRestAssured/src/Resources/API_Automation_Runner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ApiAutomationFramewok" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/Resources/API_Automation_Runner.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./Users/atifahussain/Desktop/APIAutomationRestAssured/src/Resources/API_Automation_Runner.xml" />
         <item itemvalue="Application.StringRandomizer" />
         <item itemvalue="TestNG.LogInTest" />
         <item itemvalue="TestNG.CreateUserTest" />
         <item itemvalue="TestNG.CreateUserTest.createUserWithExistingInfo" />
-        <item itemvalue="TestNG.CreateUserTest.newUsertest" />
       </list>
     </recent_temporary>
   </component>
